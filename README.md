@@ -68,8 +68,8 @@ cd nandaromao-portifolio
 ## 📞 Contato
 
 [![GitHub](https://img.shields.io/badge/GitHub-1a0a0e?style=for-the-badge&logo=github&logoColor=c9a84c)](https://github.com/NandaRomao)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-1a0a0e?style=for-the-badge&logo=linkedin&logoColor=c9a84c)](https://linkedin.com/in/seu-usuario)
-[![Email](https://img.shields.io/badge/Email-1a0a0e?style=for-the-badge&logo=gmail&logoColor=c9a84c)](mailto:seu@email.com)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-1a0a0e?style=for-the-badge&logo=linkedin&logoColor=c9a84c)]([https://linkedin.com/in/seu-usuario](https://www.linkedin.com/in/romaonanda/))
+[![Email](https://img.shields.io/badge/Email-1a0a0e?style=for-the-badge&logo=gmail&logoColor=c9a84c)](mailto:fer.romao5@gmail.com)
 
 ---
 
