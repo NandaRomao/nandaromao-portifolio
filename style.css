@@ -1,0 +1,498 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --cor-fundo: #1a0a0e;
+  --cor-sidebar: #120608;
+  --cor-texto: #f5ead8;
+  --cor-dourado: #c9a84c;
+  --cor-cereja: #8b1a2f;
+  --cor-cereja-claro: #b5294a;
+  --cor-marfim-suave: #ede0c8;
+}
+
+body {
+  background-color: var(--cor-fundo);
+  color: var(--cor-texto);
+  font-family: 'Georgia', serif;
+}
+
+.container {
+  display: flex;
+  min-height: 100vh;
+}
+
+/* ========== SIDEBAR ========== */
+
+.sidebar {
+  width: 220px;
+  min-height: 100vh;
+  background-color: var(--cor-sidebar);
+  border-right: 1px solid var(--cor-cereja);
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar-perfil {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 20px 20px;
+  gap: 8px;
+}
+
+.avatar {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 2px solid var(--cor-cereja-claro);
+  object-fit: cover;
+  margin-bottom: 12px;
+}
+
+.nome {
+  color: var(--cor-marfim-suave);
+  font-size: 0.95rem;
+  font-weight: normal;
+  letter-spacing: 0.05em;
+}
+
+.alias {
+  color: var(--cor-dourado);
+  font-size: 1.2rem;
+  font-style: italic;
+}
+
+.cargo {
+  color: var(--cor-cereja-claro);
+  font-size: 0.75rem;
+  text-align: center;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.separador {
+  border: none;
+  border-top: 1px solid var(--cor-cereja);
+  margin: 20px 30px;
+}
+
+.sidebar-nav {
+  display: flex;
+  flex-direction: column;
+  padding: 0 20px;
+  gap: 4px;
+}
+
+.sidebar-nav a {
+  color: var(--cor-texto);
+  text-decoration: none;
+  font-size: 0.85rem;
+  padding: 10px 12px;
+  border-radius: 6px;
+  letter-spacing: 0.05em;
+  transition: all 0.3s ease;
+}
+
+.sidebar-nav a:hover {
+  background-color: var(--cor-cereja);
+  color: var(--cor-marfim-suave);
+  padding-left: 18px;
+}
+
+.sidebar-contatos {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 20px;
+  gap: 20px;
+  margin-top: auto;
+  border-top: 1px solid var(--cor-cereja);
+}
+
+.sidebar-contatos a {
+  color: var(--cor-dourado);
+  font-size: 1.1rem;
+  transition: color 0.3s ease;
+}
+
+.sidebar-contatos a:hover {
+  color: var(--cor-marfim-suave);
+}
+
+/* ========== CONTEÚDO ========== */
+
+.conteudo {
+  margin-left: 220px;
+  flex: 1;
+  padding: 40px 40px 40px 60px;
+  box-sizing: border-box;
+}
+
+.hero {
+  padding: 80px 0 60px;
+  border-bottom: 1px solid var(--cor-cereja);
+}
+
+.hero-saudacao {
+  color: var(--cor-cereja-claro);
+  font-size: 1rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+}
+
+.hero-titulo {
+  color: var(--cor-marfim-suave);
+  font-size: 3rem;
+  font-weight: normal;
+  font-style: italic;
+  margin-bottom: 16px;
+}
+
+.hero-subtitulo {
+  color: var(--cor-dourado);
+  font-size: 0.9rem;
+  letter-spacing: 0.2em;
+  white-space: nowrap;
+}
+
+.apresentacao {
+  padding: 40px 0;
+  max-width: 600px;
+  line-height: 1.8;
+  color: var(--cor-texto);
+  font-size: 1rem;
+}
+
+/* ========== SKILLS ========== */
+
+.skills {
+  padding: 40px 0;
+  border-bottom: 1px solid var(--cor-cereja);
+}
+
+.secao-titulo {
+  color: var(--cor-cereja-claro);
+  font-size: 0.8rem;
+  font-weight: normal;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.skills-lista {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.skills-lista span {
+  border: 1px solid var(--cor-cereja);
+  color: var(--cor-marfim-suave);
+  font-size: 0.8rem;
+  padding: 6px 14px;
+  border-radius: 20px;
+  letter-spacing: 0.08em;
+  transition: all 0.3s ease;
+}
+
+.skills-lista span:hover {
+  background-color: var(--cor-cereja);
+  color: var(--cor-marfim-suave);
+}
+
+/* ========== PROJETOS ========== */
+
+.projetos-lista {
+  padding: 40px 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.projeto-item {
+  padding: 30px 0;
+  border-bottom: 1px solid var(--cor-cereja);
+}
+
+.projeto-status {
+  font-size: 0.7rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--cor-cereja-claro);
+}
+
+.projeto-nome {
+  color: var(--cor-marfim-suave);
+  font-size: 1.5rem;
+  font-weight: normal;
+  font-style: italic;
+  margin: 8px 0;
+}
+
+.projeto-desc {
+  color: var(--cor-texto);
+  font-size: 0.9rem;
+  line-height: 1.7;
+  max-width: 560px;
+  margin-bottom: 12px;
+}
+
+.projeto-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 14px;
+}
+
+.projeto-tags span {
+  font-size: 0.7rem;
+  letter-spacing: 0.08em;
+  color: var(--cor-dourado);
+  border: 1px solid var(--cor-dourado);
+  padding: 3px 10px;
+  border-radius: 20px;
+}
+
+.projeto-link {
+  color: var(--cor-cereja-claro);
+  font-size: 0.85rem;
+  text-decoration: none;
+  letter-spacing: 0.05em;
+  transition: color 0.3s ease;
+}
+
+.projeto-link:hover {
+  color: var(--cor-dourado);
+}
+/* ========== SOBRE ========== */
+
+.sobre-conteudo {
+  padding: 40px 0;
+  max-width: 620px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.sobre-bloco p {
+  line-height: 1.9;
+  font-size: 1rem;
+  color: var(--cor-texto);
+}
+
+.sobre-mokshyaa p {
+  color: var(--cor-marfim-suave);
+  font-style: italic;
+  border-left: 2px solid var(--cor-dourado);
+  padding-left: 20px;
+}
+/* ========== DEV LOG ========== */
+
+.devlog-lista {
+  padding: 40px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.devlog-item {
+  padding: 30px 0;
+  border-bottom: 1px solid var(--cor-cereja);
+  max-width: 620px;
+}
+
+.devlog-data {
+  font-size: 0.75rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--cor-cereja-claro);
+}
+
+.devlog-titulo {
+  color: var(--cor-marfim-suave);
+  font-size: 1.3rem;
+  font-weight: normal;
+  font-style: italic;
+  margin: 8px 0;
+}
+
+.devlog-texto {
+  color: var(--cor-texto);
+  font-size: 0.95rem;
+  line-height: 1.8;
+}
+/* ========== TEMA MANDARIM ========== */
+
+.tema-mandarim .conteudo {
+  background-color: var(--cor-marfim-suave);
+}
+
+.tema-mandarim .hero-saudacao {
+  color: var(--cor-cereja);
+}
+
+.tema-mandarim .hero-titulo {
+  color: var(--cor-cereja);
+}
+
+.tema-mandarim .hero-subtitulo {
+  color: var(--cor-dourado);
+}
+
+.tema-mandarim .hero {
+  border-bottom-color: var(--cor-cereja);
+}
+
+.tema-mandarim .mandarim-intro p {
+  color: var(--cor-cereja);
+}
+
+.tema-mandarim .mandarim-intro {
+  border-bottom-color: var(--cor-cereja);
+}
+/* ========== VOCABULÁRIO MANDARIM ========== */
+
+.vocab-indice {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 30px 0;
+  border-bottom: 1px solid var(--cor-cereja);
+  flex-wrap: wrap;
+}
+
+.vocab-indice a {
+  color: var(--cor-cereja);
+  text-decoration: none;
+  font-size: 0.85rem;
+  letter-spacing: 0.1em;
+  transition: color 0.3s ease;
+}
+
+.vocab-indice a:hover {
+  color: var(--cor-dourado);
+}
+
+.vocab-indice span {
+  color: var(--cor-dourado);
+  font-size: 0.7rem;
+}
+
+.vocab-categoria {
+  padding: 40px 0;
+  border-bottom: 1px solid var(--cor-cereja);
+}
+
+.vocab-categoria-titulo {
+  color: var(--cor-cereja);
+  font-size: 0.85rem;
+  font-weight: normal;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+
+.vocab-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 20px;
+}
+
+.vocab-card {
+  background-color: #f0e6d0;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.vocab-card-topo {
+  background-color: var(--cor-sidebar);
+  padding: 16px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.vocab-chines {
+  color: var(--cor-marfim-suave);
+  font-size: 1.6rem;
+}
+
+.vocab-pinyin {
+  color: var(--cor-cereja-claro);
+  font-size: 0.8rem;
+  letter-spacing: 0.05em;
+  font-family: 'Noto Serif', serif;
+}
+
+.vocab-traducoes {
+  display: flex;
+  gap: 12px;
+  margin-top: 4px;
+}
+
+.vocab-pt {
+  color: var(--cor-dourado);
+  font-size: 0.85rem;
+}
+
+.vocab-en {
+  color: var(--cor-texto);
+  font-size: 0.8rem;
+  opacity: 0.7;
+}
+
+.vocab-linha {
+  border: none;
+  border-top: 1px solid var(--cor-cereja);
+  margin: 0 20px;
+  opacity: 0.3;
+}
+
+.vocab-obs {
+  padding: 10px 20px;
+  font-size: 0.8rem;
+  color: var(--cor-cereja);
+  font-style: italic;
+  line-height: 1.6;
+}
+
+.vocab-exemplos {
+  list-style: none;
+  padding: 10px 20px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.vocab-exemplos li::before {
+  content: "◆";
+  color: var(--cor-cereja);
+  font-size: 0.6rem;
+  display: block;
+  margin-bottom: 4px;
+}
+
+.vocab-zh {
+  color: var(--cor-cereja);
+  font-size: 0.95rem;
+  margin-bottom: 2px;
+}
+
+.vocab-pinyin-ex {
+  color: #8b6050;
+  font-size: 0.78rem;
+  font-style: italic;
+  margin-bottom: 2px;
+}
+
+.vocab-trad {
+  color: #5a3030;
+  font-size: 0.82rem;
+}
